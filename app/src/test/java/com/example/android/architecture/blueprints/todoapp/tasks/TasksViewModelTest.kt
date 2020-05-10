@@ -37,8 +37,6 @@ class TasksViewModelTest {
         val value = tasksViewModel.newTaskEvent.getOrAwaitValue()
 
         assertThat(value.getContentIfNotHandled(), not(nullValue()))
-
-
     }
 
     @Test

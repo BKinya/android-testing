@@ -44,9 +44,8 @@ class StatisticsUtilsTest {
         val result2 = getActiveAndCompletedStats(emptyList)
         assertThat(result2.activeTasksPercent, `is`(0f))
         assertThat(result2.completedTasksPercent, `is`(0f))
-
-
     }
+
     @Test
     fun getActiveAndCompletedStats_error_returnsZeros() {
         // When there's an error loading stats
