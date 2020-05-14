@@ -28,6 +28,7 @@ android {
     // Always show the result of every unit test when running via command line, even if it passes.
     testOptions.unitTests {
         includeAndroidResources = true
+        returnDefaultValues = true
     }
 }
 
@@ -100,4 +101,6 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-contrib:$espressoVersion"
 
     androidTestImplementation "androidx.arch.core:core-testing:$archTestingVersion"
+
+    implementation "androidx.test.espresso:espresso-idling-resource:$espressoVersion"
 }
